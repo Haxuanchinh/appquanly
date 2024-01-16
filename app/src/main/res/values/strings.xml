@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AppQuanLy</string>
+    <string name="tendangnhap">Tên đăng nhập</string>
+    <string name="matkhau">Mật khẩu</string>
+    <string name="dongy">Đồng ý</string>
+    <string name="thoat">Thoát</string>
+    <string name="dangnhap">Đăng nhập</string>
+    <string name="dangky">Đăng ký</string>
+    <string name="xacnhan">Xác nhận mật khẩu</string>
+    <string name="taotaikhoan">Tạo tài khoản</string>
+    <string name="quaylai">Quay lại</string>
+    <string name="bestseller">Best seller</string>
+    <string name="trangchu">Trang chủ</string>
+    <string name="sanpham">Sản phẩm</string>
+    <string name="nhanvien">Nhân viên</string>
+    <string name="hoadon">Hóa đơn</string>
+    <string name="khachhang">Khách hàng</string>
+    <string name="donhang">Đơn hàng</string>
+    <string name="danhgia">Đánh giá</string>
+    <string name="lichsu">Lịch sử</string>
+    <string name="tenCH">The Coffee - 175 Tây Sơn, Trung Liệt, Đống Đa, Hà Nội</string>
+    <string name="timkiem">Tìm kiếm</string>
+    <string name="nametoolbar">THE COFFEE</string>
+</resources>

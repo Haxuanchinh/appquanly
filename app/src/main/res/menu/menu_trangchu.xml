@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/timkiem"
+        app:showAsAction="always">
+    </item>
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:title="@string/trangchu"
+            android:icon="@mipmap/home"
+            />
+        <item
+            android:title="@string/sanpham"
+            android:icon="@mipmap/sanpham"
+            />
+        <item
+            android:title="@string/nhanvien"
+            android:icon="@mipmap/nhanvien"
+            />
+        <item
+            android:title="@string/hoadon"
+            android:icon="@mipmap/hoadon"
+            />
+        <item
+            android:title="@string/khachhang"
+            android:icon="@mipmap/nhanvien"
+            />
+        <item
+            android:title="@string/donhang"
+            android:icon="@mipmap/giohang"
+            />
+        <item
+            android:title="@string/danhgia"
+            android:icon="@mipmap/danhgia"
+            />
+        <item
+            android:title="@string/lichsu"
+            android:icon="@mipmap/lichsu"
+            />
+    </group>
+
+</menu>
