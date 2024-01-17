@@ -72,15 +72,15 @@ public class TrangChu extends AppCompatActivity implements NavigationView.OnNavi
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
-        switch (id) {
-            case R.id.itkhachhang:
-                FragmentTransaction tranHienThiQLKH = fragmentManager.beginTransaction();
-                HIenThiQLKH hIenThiQLKH = new HIenThiQLKH();
-                tranHienThiQLKH.replace(R.id.content, hIenThiQLKH);
-                tranHienThiQLKH.commit();
-                ;
-                break;
-        }
+//        switch (id) {
+//            case R.id.:
+//                FragmentTransaction tranHienThiQLKH = fragmentManager.beginTransaction();
+//                HIenThiQLKH hIenThiQLKH = new HIenThiQLKH();
+//                tranHienThiQLKH.replace(R.id.content, hIenThiQLKH);
+//                tranHienThiQLKH.commit();
+//                ;
+//                break;
+//        }
         return false;
     }
 
