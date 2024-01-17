@@ -1,8 +1,11 @@
 package com.example.appquanly;
 
 
+import android.annotation.SuppressLint;
+import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -21,20 +24,28 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.appquanly.QLKH.qlkh;
 import com.google.android.material.navigation.NavigationView;
 
-public class TrangChu extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class TrangChu extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
     TextView tenCH, bestseller;
     FragmentManager fragmentManager;
+<<<<<<< HEAD
+=======
+    MenuItem trangchu,khachhang;
+    private Databse_QuanLy Database_QuanLy;
+>>>>>>> 244ff2a202e89dfc9c27ea903b3d35cb5aac71da
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.trangchu);
         AnhXa();
         actionBar();
+        trangchu = findViewById(R.id.trangchu);
+        khachhang = findViewById(R.id.khachhang);
         ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.mo, R.string.dong){
             @Override
             public void onDrawerOpened(View drawerView) {
@@ -50,7 +61,6 @@ public class TrangChu extends AppCompatActivity implements NavigationView.OnNavi
         drawerToggle.syncState();
 
         navigationView.setItemIconTintList(null);
-        navigationView.setNavigationItemSelectedListener(this);
 
         fragmentManager = getSupportFragmentManager();
         Intent intent = getIntent();
@@ -62,23 +72,9 @@ public class TrangChu extends AppCompatActivity implements NavigationView.OnNavi
         drawerLayout = findViewById(R.id.drawerlayout);
         navigationView = findViewById(R.id.ngvTrangchu);
         toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         tenCH = findViewById(R.id.tenCH);
         bestseller = findViewById(R.id.bestseller);
-    }
-
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        int id = item.getItemId();
-//        switch (id) {
-//            case R.id.:
-//                FragmentTransaction tranHienThiQLKH = fragmentManager.beginTransaction();
-//                HIenThiQLKH hIenThiQLKH = new HIenThiQLKH();
-//                tranHienThiQLKH.replace(R.id.content, hIenThiQLKH);
-//                tranHienThiQLKH.commit();
-//                ;
-//                break;
-//        }
-        return false;
     }
 
     private void actionBar(){
@@ -91,6 +87,26 @@ public class TrangChu extends AppCompatActivity implements NavigationView.OnNavi
                 drawerLayout.openDrawer(GravityCompat.START);
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_trangchu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId()==R.id.trangchu){
+
+            Intent intent = new Intent(this, TrangChu.class);
+            startActivity(intent);
+        } else if (item.getItemId()==R.id.khachhang) {
+            Intent intent = new Intent(TrangChu.this, qlkh.class);
+            startActivity(intent);
+        }
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return super.onOptionsItemSelected(item);
     }
 
 }
