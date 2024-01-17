@@ -21,4 +21,18 @@
     <string name="tenCH">The Coffee - 175 Tây Sơn, Trung Liệt, Đống Đa, Hà Nội</string>
     <string name="timkiem">Tìm kiếm</string>
     <string name="nametoolbar">THE COFFEE</string>
+    <string name="tennhanvien">Họ và tên</string>
+    <string name="manhanvien">Mã nhân viên</string>
+    <string name="matkhauNV">Mật khẩu</string>
+    <string name="xacnhanNV">Xác nhận mật khẩu</string>
+    <string name="them">Thêm</string>
+    <string name="sua">Sửa</string>
+    <string name="xoa">Xóa</string>
+    <string name="thongtinNV">Thông tin nhân viên</string>
+    <string name="thongtinSP">Thông tin sản phẩm</string>
+    <string name="tensanpham">Tên sản phẩm</string>
+    <string name="masanpham">Mã sản phẩm</string>
+    <string name="mota">Mô tả</string>
+    <string name="giatien">Giá tiền</string>
+    <string name="hinhanh">Hình ảnh</string>
 </resources>
