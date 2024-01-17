@@ -35,4 +35,6 @@
     <string name="mota">Mô tả</string>
     <string name="giatien">Giá tiền</string>
     <string name="hinhanh">Hình ảnh</string>
+    <string name="mo">Mở</string>
+    <string name="dong">Đóng</string>
 </resources>

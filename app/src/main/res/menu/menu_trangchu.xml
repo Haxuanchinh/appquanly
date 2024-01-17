@@ -2,44 +2,39 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:icon="@android:drawable/ic_menu_search"
-        android:title="@string/timkiem"
-        app:showAsAction="always">
-    </item>
     <group
         android:checkableBehavior="single">
         <item
-            android:id="@+id/trangchu"
+            android:id="@+id/ittrangchu"
             android:icon="@mipmap/home"
             android:title="@string/trangchu" />
         <item
             android:title="@string/sanpham"
-            android:id="@+id/sanpham"
+            android:id="@+id/itsanpham"
             android:icon="@mipmap/sanpham"
             />
         <item
-            android:id="@+id/nhanvien"
+            android:id="@+id/itnhanvien"
             android:icon="@mipmap/nhanvien"
             android:title="@string/nhanvien" />
         <item
-            android:id="@+id/hoadon"
+            android:id="@+id/ithoadon"
             android:icon="@mipmap/hoadon"
             android:title="@string/hoadon" />
         <item
-            android:id="@+id/khachhang"
+            android:id="@+id/itkhachhang"
             android:icon="@mipmap/nhanvien"
             android:title="@string/khachhang" />
         <item
-            android:id="@+id/donhang"
+            android:id="@+id/itdonhang"
             android:icon="@mipmap/giohang"
             android:title="@string/donhang" />
         <item
-            android:id="@+id/danhgia"
+            android:id="@+id/itdanhgia"
             android:icon="@mipmap/danhgia"
             android:title="@string/danhgia" />
         <item
-            android:id="@+id/lichsu"
+            android:id="@+id/itlichsu"
             android:icon="@mipmap/lichsu"
             android:title="@string/lichsu" />
     </group>
