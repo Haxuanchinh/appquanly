@@ -1,42 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+        <group
+            android:checkableBehavior="single"/>
+        <item android:id="@+id/search" app:showAsAction="always" android:title="Search"
+            android:icon="@drawable/ic_launcher_foreground"
+            app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+        <item
+            android:title="@string/trangchu" android:id="@+id/trangchu" android:icon="@mipmap/home"/>
 
-    <group
-        android:checkableBehavior="single">
         <item
-            android:id="@+id/ittrangchu"
-            android:icon="@mipmap/home"
-            android:title="@string/trangchu" />
+            android:title="@string/sanpham"  android:id="@+id/sanpham" android:icon="@mipmap/sanpham"/>
         <item
-            android:title="@string/sanpham"
-            android:id="@+id/itsanpham"
-            android:icon="@mipmap/sanpham"
-            />
+            android:title="@string/nhanvien" android:id="@+id/nhanvien" android:icon="@mipmap/nhanvien"/>
         <item
-            android:id="@+id/itnhanvien"
-            android:icon="@mipmap/nhanvien"
-            android:title="@string/nhanvien" />
+            android:id="@+id/hoadon" android:icon="@mipmap/hoadon" android:title="@string/hoadon"/>
         <item
-            android:id="@+id/ithoadon"
-            android:icon="@mipmap/hoadon"
-            android:title="@string/hoadon" />
+            android:id="@+id/khachhang" android:icon="@mipmap/nhanvien" android:title="@string/khachhang"/>
         <item
-            android:id="@+id/itkhachhang"
-            android:icon="@mipmap/nhanvien"
-            android:title="@string/khachhang" />
+            android:id="@+id/donhang" android:icon="@mipmap/giohang" android:title="@string/donhang" />
         <item
-            android:id="@+id/itdonhang"
-            android:icon="@mipmap/giohang"
-            android:title="@string/donhang" />
+            android:id="@+id/danhgia" android:icon="@mipmap/danhgia" android:title="@string/danhgia" />
         <item
-            android:id="@+id/itdanhgia"
-            android:icon="@mipmap/danhgia"
-            android:title="@string/danhgia" />
-        <item
-            android:id="@+id/itlichsu"
-            android:icon="@mipmap/lichsu"
-            android:title="@string/lichsu" />
-    </group>
-
+            android:id="@+id/lichsu" android:icon="@mipmap/lichsu" android:title="@string/lichsu" />
 </menu>
