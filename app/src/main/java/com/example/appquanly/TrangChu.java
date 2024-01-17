@@ -11,6 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.appquanly.QLKH.qlkh;
 import com.example.appquanly.database.Databse_QuanLy;
 import com.google.android.material.navigation.NavigationView;
 
@@ -49,6 +50,13 @@ public class TrangChu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 drawerLayout.openDrawer(GravityCompat.START);
+                toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(TrangChu.this, qlkh.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
     }
