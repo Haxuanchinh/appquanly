@@ -19,7 +19,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.appquanly.QLKH.qlkh;
-import com.example.appquanly.database.Databse_QuanLy;
 import com.google.android.material.navigation.NavigationView;
 
 public class TrangChu extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -29,13 +28,11 @@ public class TrangChu extends AppCompatActivity implements NavigationView.OnNavi
     Toolbar toolbar;
     TextView tenCH, bestseller;
     FragmentManager fragmentManager;
-    private Databse_QuanLy Database_QuanLy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.trangchu);
-        Database_QuanLy = new Databse_QuanLy(this);
         AnhXa();
         actionBar();
         ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.mo, R.string.dong){
