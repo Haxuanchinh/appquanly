@@ -9,17 +9,20 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mã sản phẩm"
+        android:text="Mã sản phẩm : "
+        android:textColor="#FB0101"
+        android:textColorHighlight="#CD1010"
         tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="103dp" />
+        tools:layout_editor_absoluteY="76dp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tên sản phẩm"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="156dp" />
+        android:text="Tên sản phẩm : "
+        android:textColor="#F60303"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="76dp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -34,50 +37,60 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Giá Sản phẩm"
+        android:text="Số lượng : "
+        android:textColor="#F40202"
         tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="206dp" />
+        tools:layout_editor_absoluteY="174dp" />
 
     <EditText
         android:id="@+id/edtmasp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="142dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="84dp" />
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="111dp" />
 
     <Button
         android:id="@+id/btninsert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="166dp"
+        android:layout_height="42dp"
         android:text="Thêm Vào"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="287dp" />
+        android:textColorHighlight="#E81010"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="193dp" />
 
     <Button
         android:id="@+id/btnquery"
-        android:layout_width="126dp"
-        android:layout_height="48dp"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="168dp"
+        android:layout_height="44dp"
         android:text="Sửa"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="284dp" />
+        android:textColorHighlight="#EA0707"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="256dp" />
 
     <Button
         android:id="@+id/btndelete"
-        android:layout_width="116dp"
-        android:layout_height="48dp"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="377dp"
+        android:layout_height="46dp"
         android:text="Xóa"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="353dp" />
+        android:textColorHighlight="#E10707"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="329dp" />
 
     <Button
         android:id="@+id/btnupdate"
-        android:layout_width="128dp"
-        android:layout_height="51dp"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="154dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#D81111"
         android:text="Cập nhật"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="353dp" />
+        android:textColorHighlight="#D50B0B"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="256dp" />
 
     <LinearLayout
         android:layout_width="409dp"
@@ -101,19 +114,19 @@
 
     <EditText
         android:id="@+id/edttensp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="162dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="140dp" />
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="111dp" />
 
     <EditText
-        android:id="@+id/edtgiasp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/edtsoluong"
+        android:layout_width="146dp"
+        android:layout_height="41dp"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="193dp" />
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="202dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
