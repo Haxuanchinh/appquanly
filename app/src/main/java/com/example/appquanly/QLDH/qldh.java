@@ -1,12 +1,11 @@
 package com.example.appquanly.QLDH;
 
 import android.content.ContentValues;
-import android.content.Context;
-<<<<<<< HEAD
+
 import android.content.Intent;
-=======
+
 import android.database.Cursor;
->>>>>>> e9497a1b6598e68a9e604cad2349ec205bb010d7
+
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,12 +14,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.pm.PermissionInfoCompat;
+
 import com.example.appquanly.R;
 
 import java.util.ArrayList;
@@ -40,7 +38,7 @@ public class qldh extends AppCompatActivity {
         setContentView(R.layout.qldonhang);
         Intent intent = getIntent();
 
-        edttensp = findViewById(R.id.edttensp);
+        edttensp = findViewById(R.id.edtmasp);
         edtsoluong = findViewById(R.id.edtsoluong);
         edtmasp = findViewById(R.id.edtmasp);
         btninsert = findViewById(R.id.btninsert);

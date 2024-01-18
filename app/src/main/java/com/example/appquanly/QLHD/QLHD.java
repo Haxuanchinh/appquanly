@@ -1,7 +1,6 @@
 package com.example.appquanly.QLHD;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -29,8 +28,6 @@ public class QLHD extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.qlhd);
-        Intent intent = getIntent();
-
         edtMahd=findViewById(R.id.edtMahd);
         edtTensp=findViewById(R.id.edtTensp);
         edtSL=findViewById(R.id.edtSL);
