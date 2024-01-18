@@ -31,11 +31,8 @@ public class TrangChu extends AppCompatActivity {
     Toolbar toolbar;
     TextView tenCH, bestseller;
     FragmentManager fragmentManager;
-<<<<<<< HEAD
-=======
+
     MenuItem trangchu,khachhang;
-    private Databse_QuanLy Database_QuanLy;
->>>>>>> 244ff2a202e89dfc9c27ea903b3d35cb5aac71da
 
     @SuppressLint("MissingInflatedId")
     @Override
