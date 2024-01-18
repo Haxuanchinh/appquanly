@@ -34,8 +34,11 @@ public class TrangChu extends AppCompatActivity {
     Toolbar toolbar;
     FragmentManager fragmentManager;
 
+<<<<<<< HEAD
     Button btnNhanvien, btnSanPham, btnkhachhang, btnhoadon, btndonhang;
 
+=======
+>>>>>>> e9497a1b6598e68a9e604cad2349ec205bb010d7
     MenuItem trangchu,khachhang;
 
     @SuppressLint("MissingInflatedId")
