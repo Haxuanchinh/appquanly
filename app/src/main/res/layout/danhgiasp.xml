@@ -11,7 +11,8 @@
         android:text="ĐÁNH GIÁ SẢN PHẨM"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView9"
@@ -20,7 +21,8 @@
         android:text="Tên sản phẩm"
         android:textColor="#F40000"
         tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="65dp" />
+        tools:layout_editor_absoluteY="65dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edtten"
@@ -29,7 +31,8 @@
         android:ems="10"
         android:inputType="text"
         tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="51dp" />
+        tools:layout_editor_absoluteY="51dp"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/cb1"
@@ -37,13 +40,15 @@
         android:layout_height="48dp"
         android:text="Rất hài lòng"
         tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="105dp" />
+        tools:layout_editor_absoluteY="105dp"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/cb2"
         android:layout_width="194dp"
-        android:layout_height="47dp"
+        android:layout_height="48dp"
         android:text="Hài lòng"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="201dp"
         tools:layout_editor_absoluteY="106dp" />
 
@@ -53,21 +58,24 @@
         android:layout_height="48dp"
         android:text="Trung lập"
         tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="153dp" />
+        tools:layout_editor_absoluteY="153dp"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/cb4"
         android:layout_width="177dp"
-        android:layout_height="51dp"
+        android:layout_height="48dp"
         android:text="Không hài lòng"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="201dp"
         tools:layout_editor_absoluteY="153dp" />
 
     <CheckBox
         android:id="@+id/cb5"
         android:layout_width="196dp"
-        android:layout_height="52dp"
+        android:layout_height="48dp"
         android:text="Rất không hài lòng"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="204dp" />
 
@@ -78,7 +86,8 @@
         android:text="Góp ý của khách hàng"
         android:textColor="#FF0202"
         tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="263dp" />
+        tools:layout_editor_absoluteY="263dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edtgopy"
@@ -87,7 +96,8 @@
         android:ems="10"
         android:inputType="text"
         tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="282dp" />
+        tools:layout_editor_absoluteY="282dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnsend"
@@ -95,7 +105,8 @@
         android:layout_height="wrap_content"
         android:text="Gửi"
         tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="343dp" />
+        tools:layout_editor_absoluteY="343dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnsua"
@@ -103,7 +114,8 @@
         android:layout_height="wrap_content"
         android:text="Sửa"
         tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="343dp" />
+        tools:layout_editor_absoluteY="343dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnxoa"
@@ -111,13 +123,15 @@
         android:layout_height="wrap_content"
         android:text="Xóa"
         tools:layout_editor_absoluteX="290dp"
-        tools:layout_editor_absoluteY="343dp" />
+        tools:layout_editor_absoluteY="343dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/txtreview"
         android:layout_width="372dp"
         android:layout_height="243dp"
         tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="413dp" />
+        tools:layout_editor_absoluteY="413dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

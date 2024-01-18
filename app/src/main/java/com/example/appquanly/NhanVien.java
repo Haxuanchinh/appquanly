@@ -60,7 +60,7 @@ public class NhanVien extends AppCompatActivity {
                 values.put("matkhau", matkhauNV);
                 values.put("xacnhanMK", xacnhanNV);
                 String  msg = "";
-                if(DBNhanVien.insert("tbNV", null, values) == -1){
+                if(DBNhanVien.insert("DanhSachNV", null, values) == -1){
                     msg = "Thêm thất bại";
                 }
                 else{
@@ -74,7 +74,7 @@ public class NhanVien extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String maNV = edtMaNV.getText().toString();
-                int n = DBNhanVien.delete("tbNV", "maNV = ?", new String[]{maNV});
+                int n = DBNhanVien.delete("DanhSachNV", "maNV = ?", new String[]{maNV});
                 String msg = "";
                 if(n == 0){
                     msg = "No record to delete";
@@ -97,7 +97,7 @@ public class NhanVien extends AppCompatActivity {
                 values.put("hoten", hoten);
                 values.put("matkhau", matkhauNV);
                 values.put("xacnhanMK", xacnhanNV);
-                int n = DBNhanVien.update("tbNV", values, "maNV = ?", new String[]{maNV});
+                int n = DBNhanVien.update("DanhSachNV", values, "maNV = ?", new String[]{maNV});
                 String msg = "";
                 if(n == 0){
                     msg = "No record to update";
@@ -113,7 +113,7 @@ public class NhanVien extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 listNV.clear();
-                Cursor c = DBNhanVien.query("tbNV", null,null,null,null,null,null);
+                Cursor c = DBNhanVien.query("DanhSachNV", null,null,null,null,null,null);
                 String data = "";
                 while (c.isAfterLast() == false){
                     data = c.getString(0)+ "-"+c.getString(1)+ "-"+c.getString(2)+ "-"+c.getString(3);

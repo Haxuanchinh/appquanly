@@ -46,41 +46,36 @@
                     android:id="@+id/btnNhanvien"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nhan vien"
-                    android:layout_margin="5dp">
-                </Button>
+                    android:layout_margin="5dp"
+                    android:text="Nhân viên"></Button>
 
                 <Button
                     android:id="@+id/btnSanPham"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="San pham"
-                    android:layout_margin="5dp">
-                </Button>
+                    android:layout_margin="5dp"
+                    android:text="Sản phẩm"></Button>
 
                 <Button
                     android:id="@+id/btnkhachhang"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="khach hang"
-                    android:layout_margin="5dp">
-                </Button>
+                    android:layout_margin="5dp"
+                    android:text="Khách hàng"></Button>
 
                 <Button
                     android:id="@+id/btnhoadon"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="hoa don"
-                    android:layout_margin="5dp">
-                </Button>
+                    android:layout_margin="5dp"
+                    android:text="Hóa ơn"></Button>
 
                 <Button
                     android:id="@+id/btndonhang"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="don hang"
-                    android:layout_margin="5dp">
-                </Button>
+                    android:layout_margin="5dp"
+                    android:text="Đơn hàng"></Button>
 
 
             </LinearLayout>
