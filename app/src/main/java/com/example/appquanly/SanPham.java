@@ -1,6 +1,7 @@
 package com.example.appquanly;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -31,6 +32,7 @@ public class SanPham extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sanpham);
         AnhXa();
+        Intent intent = getIntent();
         listSP = new ArrayList<>();
         adapterSP = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listSP);
         lvDSSP.setAdapter(adapterSP);
@@ -92,9 +94,9 @@ public class SanPham extends AppCompatActivity {
                 String mota = edtmotaSP.getText().toString();
                 String giatien = edtgiaSP.getText().toString();
                 ContentValues values = new ContentValues();
-                values.put("hoten", tenSP);
-                values.put("matkhau", mota);
-                values.put("xacnhanMK", giatien);
+                values.put("tenSP", tenSP);
+                values.put("mota", mota);
+                values.put("giatien", giatien);
                 int n = DBSanPham.update("tbSP", values, "maSP = ?", new String[]{maSP});
                 String msg = "";
                 if(n == 0){

@@ -33,16 +33,6 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tenCH"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:text="@string/tenCH"
-                    android:textSize="20dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp">
-                </TextView>
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -51,15 +41,46 @@
                     android:layout_marginTop="15dp">
                 </ImageView>
 
-                <TextView
-                    android:id="@+id/bestseller"
+
+                <Button
+                    android:id="@+id/btnNhanvien"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/bestseller"
-                    android:textSize="20dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp">
-                </TextView>
+                    android:text="Nhan vien"
+                    android:layout_margin="5dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/btnSanPham"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="San pham"
+                    android:layout_margin="5dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/btnkhachhang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="khach hang"
+                    android:layout_margin="5dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/btnhoadon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="hoa don"
+                    android:layout_margin="5dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/btndonhang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="don hang"
+                    android:layout_margin="5dp">
+                </Button>
 
 
             </LinearLayout>

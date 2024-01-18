@@ -2,6 +2,7 @@ package com.example.appquanly.QLDH;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,6 +34,8 @@ public class qldh extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.qldonhang);
+        Intent intent = getIntent();
+
         edttensp = findViewById(R.id.edttensp);
         edtgiasp = findViewById(R.id.edtgiasp);
         edtmasp = findViewById(R.id.edtmasp);

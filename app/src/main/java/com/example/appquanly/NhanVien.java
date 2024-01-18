@@ -1,6 +1,7 @@
 package com.example.appquanly;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -31,6 +32,7 @@ public class NhanVien extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nhanvien);
         AnhXa();
+        Intent intent = getIntent();
         listNV = new ArrayList<>();
         adapterNV = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listNV);
         lvDSNV.setAdapter(adapterNV);

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
@@ -21,6 +22,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.appquanly.QLDH.qldh;
+import com.example.appquanly.QLHD.QLHD;
 import com.example.appquanly.QLKH.qlkh;
 import com.google.android.material.navigation.NavigationView;
 
@@ -29,13 +32,11 @@ public class TrangChu extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-    TextView tenCH, bestseller;
     FragmentManager fragmentManager;
-<<<<<<< HEAD
-=======
+
+    Button btnNhanvien, btnSanPham, btnkhachhang, btnhoadon, btndonhang;
+
     MenuItem trangchu,khachhang;
-    private Databse_QuanLy Database_QuanLy;
->>>>>>> 244ff2a202e89dfc9c27ea903b3d35cb5aac71da
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -45,7 +46,6 @@ public class TrangChu extends AppCompatActivity {
         AnhXa();
         actionBar();
         trangchu = findViewById(R.id.trangchu);
-        khachhang = findViewById(R.id.khachhang);
         ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.mo, R.string.dong){
             @Override
             public void onDrawerOpened(View drawerView) {
@@ -65,6 +65,46 @@ public class TrangChu extends AppCompatActivity {
         fragmentManager = getSupportFragmentManager();
         Intent intent = getIntent();
 
+        btnNhanvien.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(TrangChu.this, NhanVien.class);
+                startActivity(intent1);
+            }
+        });
+
+        btnSanPham.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(TrangChu.this, SanPham.class);
+                startActivity(intent1);
+            }
+        });
+
+        btnkhachhang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(TrangChu.this, qlkh.class);
+                startActivity(intent1);
+            }
+        });
+
+        btnhoadon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(TrangChu.this, QLHD.class);
+                startActivity(intent1);
+            }
+        });
+
+        btndonhang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(TrangChu.this, qldh.class);
+                startActivity(intent1);
+            }
+        });
+
 
     }
 
@@ -73,8 +113,11 @@ public class TrangChu extends AppCompatActivity {
         navigationView = findViewById(R.id.ngvTrangchu);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        tenCH = findViewById(R.id.tenCH);
-        bestseller = findViewById(R.id.bestseller);
+        btnNhanvien = findViewById(R.id.btnNhanvien);
+        btnSanPham = findViewById(R.id.btnSanPham);
+        btnkhachhang = findViewById(R.id.btnkhachhang);
+        btnhoadon = findViewById(R.id.btnhoadon);
+        btndonhang = findViewById(R.id.btndonhang);
     }
 
     private void actionBar(){

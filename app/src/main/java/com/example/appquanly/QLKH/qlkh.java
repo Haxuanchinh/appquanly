@@ -1,6 +1,7 @@
 package com.example.appquanly.QLKH;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -33,6 +34,8 @@ public class qlkh extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.qlkh);
+        Intent intent = getIntent();
+
         edtMakh = findViewById(R.id.edtMakh);
         edtTen = findViewById(R.id.edtTen);
         edtGioitinh = findViewById(R.id.edtGioitinh);
