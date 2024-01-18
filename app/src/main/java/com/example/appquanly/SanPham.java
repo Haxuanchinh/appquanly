@@ -37,7 +37,7 @@ public class SanPham extends AppCompatActivity {
         adapterSP = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listSP);
         lvDSSP.setAdapter(adapterSP);
 
-        DBSanPham = openOrCreateDatabase("DanhSachSP", MODE_PRIVATE, null);
+        DBSanPham = openOrCreateDatabase("DanhSachSP.db", MODE_PRIVATE, null);
         try{
             String sql = "CREATE TABLE tbSP (maSP TEXT primary key, tenSP TEXT, mota TEXT, giatien TEXT)";
             DBSanPham.execSQL(sql);

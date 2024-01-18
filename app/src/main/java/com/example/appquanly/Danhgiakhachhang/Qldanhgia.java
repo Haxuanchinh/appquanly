@@ -1,4 +1,5 @@
 package com.example.appquanly.Danhgiakhachhang;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,7 @@ public class Qldanhgia  extends  AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.danhgiasp);
+        Intent intent = getIntent();
 
         // Ánh xạ các thành phần giao diện
         edtTen = findViewById(R.id.edtten);

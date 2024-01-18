@@ -19,6 +19,7 @@
         <activity android:name=".QLKH.qlkh"/>
         <activity android:name=".QLHD.QLHD"/>
         <activity android:name=".QLDH.qldh"/>
+        <activity android:name=".Danhgiakhachhang.Qldanhgia"/>
         <activity
             android:name=".DangNhap"
             android:exported="true">

@@ -22,6 +22,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.appquanly.Danhgiakhachhang.Qldanhgia;
 import com.example.appquanly.QLDH.qldh;
 import com.example.appquanly.QLHD.QLHD;
 import com.example.appquanly.QLKH.qlkh;
@@ -34,7 +35,7 @@ public class TrangChu extends AppCompatActivity {
     Toolbar toolbar;
     FragmentManager fragmentManager;
 
-    Button btnNhanvien, btnSanPham, btnkhachhang, btnhoadon, btndonhang;
+    Button btnNhanvien, btnSanPham, btnkhachhang, btnhoadon, btndonhang, btndanhgia;
     MenuItem trangchu,khachhang;
 
     @SuppressLint("MissingInflatedId")
@@ -104,6 +105,14 @@ public class TrangChu extends AppCompatActivity {
             }
         });
 
+        btndanhgia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(TrangChu.this, Qldanhgia.class);
+                startActivity(intent1);
+            }
+        });
+
 
     }
 
@@ -117,6 +126,7 @@ public class TrangChu extends AppCompatActivity {
         btnkhachhang = findViewById(R.id.btnkhachhang);
         btnhoadon = findViewById(R.id.btnhoadon);
         btndonhang = findViewById(R.id.btndonhang);
+        btndanhgia = findViewById(R.id.btndanhgia);
     }
 
     private void actionBar(){

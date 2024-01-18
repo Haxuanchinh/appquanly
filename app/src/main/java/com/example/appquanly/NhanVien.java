@@ -37,7 +37,7 @@ public class NhanVien extends AppCompatActivity {
         adapterNV = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listNV);
         lvDSNV.setAdapter(adapterNV);
 
-        DBNhanVien = openOrCreateDatabase("DanhSachNV", MODE_PRIVATE, null);
+        DBNhanVien = openOrCreateDatabase("DanhSachNV.db", MODE_PRIVATE, null);
         try{
             String sql = "CREATE TABLE tbNV (maNV TEXT primary key, hoten TEXT, matkhauNV TEXT, xacnhanNV TEXT)";
             DBNhanVien.execSQL(sql);
